@@ -23,7 +23,7 @@ public class Bus {
 	public void  setPatente(String patente){this.patente=patente;}
 	public String getMarca(){return marca;}
 	public void setModeloDeBus(String direccion){this.modeloDeBus=modeloDeBus;}
-	public List<Pasajero> getListaPasajeros() {return listaBuses;}
+	public List<Pasajero> getListaPasajeros() {return listaDePasajeros;}
 
 
 	public void agregarConductor(Conductor Conductor) {
