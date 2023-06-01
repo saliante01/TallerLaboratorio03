@@ -8,12 +8,12 @@ public class Viaje {
 
 	public void agregarViaje() {
 		// TODO - implement viaje.agregarViaje
-		throw new UnsupportedOperationException();
+		//throw new UnsupportedOperationException();
 	}
 
 	public void mostrarViajes() {
 		// TODO - implement viaje.mostrarViajes
-		throw new UnsupportedOperationException();
+		//throw new UnsupportedOperationException();
 	}
 
 }
