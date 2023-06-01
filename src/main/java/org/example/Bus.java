@@ -1,10 +1,27 @@
 package org.example;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Bus {
 
 	private String patente;
 	private String marca;
 	private String modeloDeBus;
+	private ArrayList<Pasajero> listaBuses;
 
+	public Bus(){
+		this.patente=patente;
+		this.marca=marca;
+		this.modeloDeBus=modeloDeBus;
+
+	}
+
+	public String getPatente(){return patente;}
+	public void  setPatente(String patente){this.patente=patente;}
+	public String getMarca(){return marca;}
+	public void setModeloDeBus(String direccion){this.modeloDeBus=modeloDeBus;}
+	public List<Pasajero> getListaPasajeros() {return listaBuses;}
 
 
 	public void agregarConductor() {
@@ -12,9 +29,11 @@ public class Bus {
 		throw new UnsupportedOperationException();
 	}
 
-	public void agregarPasajero() {
+	public void agregarPasajero(Pasajero Pasajero) {
 		// TODO - implement bus.agregarPasajero
-		throw new UnsupportedOperationException();
+		listaBuses.add(Pasajero);
+
+		//throw new UnsupportedOperationException();
 	}
 
 	public void mostrarPasajeros() {
