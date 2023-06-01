@@ -8,8 +8,10 @@ public class Bus {
 	private String patente;
 	private String marca;
 	private String modeloDeBus;
-	private ArrayList<Pasajero> listaBuses;
 
+
+	private ArrayList<Conductor> listaConductores;
+	private ArrayList<Pasajero> listaDePasajeros;
 	public Bus(){
 		this.patente=patente;
 		this.marca=marca;
@@ -24,21 +26,23 @@ public class Bus {
 	public List<Pasajero> getListaPasajeros() {return listaBuses;}
 
 
-	public void agregarConductor() {
+	public void agregarConductor(Conductor Conductor) {
+		listaConductores.add(Conductor);
 		// TODO - implement bus.agregarConductor
-		throw new UnsupportedOperationException();
+		//throw new UnsupportedOperationException();
 	}
 
 	public void agregarPasajero(Pasajero Pasajero) {
 		// TODO - implement bus.agregarPasajero
-		listaBuses.add(Pasajero);
+		listaDePasajeros.add(Pasajero);
 
 		//throw new UnsupportedOperationException();
 	}
 
 	public void mostrarPasajeros() {
 		// TODO - implement bus.mostrarPasajeros
-		throw new UnsupportedOperationException();
+		//throw new UnsupportedOperationException();
+		System.out.println(listaDePasajeros);
 	}
 
 }
